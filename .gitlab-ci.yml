@@ -26,14 +26,14 @@ build1:
 test1:
   stage: test
   script:
-     - export VERSION=med
+     - export VERSION="med"
      - echo "VERSION=$VERSION" >> build.env
   artifacts:
      reports:
        dotenv: build.env
 
 test2:
-  stage: test_t
+  stage: test
   variables:
     VERSION: $VERSION
   script:

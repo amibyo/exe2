@@ -24,20 +24,20 @@ after_script:
 
 
 
-# test1:
-#   stage: build
-#   script:
-#      - python first.py
-#      - export DATA=$MY_DATA
-#      - echo "MY_DATA=$DATA" >> build.env
-#   artifacts:
-#      reports:
-#        dotenv: build.env
+test1:
+  stage: build
+  script:
+     - python first.py
+     - export DATA=$MY_DATA
+     - echo "MY_DATA=$DATA" >> build.env
+  artifacts:
+     reports:
+       dotenv: build.env
 
 test2:
   stage: test
   variables:
-    V: "MY_DATA_s"
+    V: $MY_DATA
   script:
     - echo $V
     - python second.py ${VERSION}

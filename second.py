@@ -1,4 +1,4 @@
 import sys
-var = sys.argv[0]
+var = sys.argv[1]
 
 print(var)

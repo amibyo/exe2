@@ -27,6 +27,7 @@ after_script:
 test1:
   stage: build
   script:
+     - env
      - python first.py
      - echo "$MY_DATA"
      - export DATA='ghoulem'

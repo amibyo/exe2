@@ -40,6 +40,6 @@ test2:
     VERSION: $MY_DATA
   script:
     - echo $VERSION
-    - python second.py $VERSION
+    - python second.py ${VERSION}
 
 

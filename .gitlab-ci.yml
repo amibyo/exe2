@@ -37,7 +37,7 @@ after_script:
 test2:
   stage: test
   variables:
-    V: "$MY_DATA"
+    V: "MY_DATA_s"
   script:
     - echo $V
     - python second.py ${VERSION}

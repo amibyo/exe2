@@ -25,7 +25,7 @@ test1:
   script:
      - python first.py
      - echo $MY_DATA
-     - echo "$MY_DATA" >> build.env
+     #- echo "$MY_DATA" >> build.env
   artifacts:
      reports:
        dotenv: build.env

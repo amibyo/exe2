@@ -33,7 +33,7 @@ test1:
        dotenv: build.env
 
 test2:
-  stage: test
+  stage: test_t
   variables:
     VERSION: $VERSION
   script:

@@ -23,7 +23,7 @@ after_script:
 test1:
   stage: build
   script:
-     - first.py
+     - python first.py
      - echo "$MY_DATA" >> build.env
   artifacts:
      reports:
@@ -35,6 +35,6 @@ test2:
     VERSION: $MY_DATA
   script:
     - echo $VERSION
-    - second.py $VERSION
+    - python second.py $VERSION
 
 

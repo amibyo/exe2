@@ -24,8 +24,8 @@ test1:
   stage: build
   script:
      - python first.py
-     - echo $MY_DATA
-     #- echo "$MY_DATA" >> build.env
+     - export DATA = $MY_DATA
+     - echo "$DATA" >> build.env
   artifacts:
      reports:
        dotenv: build.env

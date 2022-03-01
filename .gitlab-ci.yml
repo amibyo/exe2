@@ -28,7 +28,7 @@ test1:
   stage: build
   script:
      - python first.py
-     - echo $MY_DATA
+     - $MY_DATA
      - export DATA=$MY_DATA
 
      - echo "MY_DATA=$DATA" >> build.env

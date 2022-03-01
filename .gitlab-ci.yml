@@ -29,7 +29,8 @@ test1:
   script:
      - python first.py
      - echo "$MY_DATA"
-     - export DATA=$MY_DATA
+     - export DATA='ghoulem'
+     - echo $DATA
 
      - echo "MY_DATA=$DATA" >> build.env
   artifacts:

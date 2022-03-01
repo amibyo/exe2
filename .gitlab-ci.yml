@@ -18,13 +18,17 @@ after_script:
   - echo "After script section"
   - echo "For example you might do some cleanup here"
 
+  #  - export VERSION=med
+ #    - export VERSION="med"
+#     - echo "VERSION=$VERSION" >> build.env
+
 
 
 test1:
   stage: build
   script:
      - python first.py
-     - export DATA = "MY_DATA"
+     - export DATA="MY_DATA"
      - echo "MY_DATA=$DATA" >> build.env
   artifacts:
      reports:

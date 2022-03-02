@@ -27,13 +27,9 @@ after_script:
 test1:
   stage: build
   script:
-     - python first.py
-     - env
-     - echo "$MY_DATA"
-     - export DATA='ghoulem'
-     - echo $DATA
-
-     - echo "MY_DATA=$DATA" >> build.env
+     - export VERSION="med"
+     - echo "VERSION=$VERSION" >> build.env
+     - cat  build.env
   artifacts:
      reports:
        dotenv: build.env

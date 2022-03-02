@@ -40,6 +40,6 @@ test2:
     V: $message
   script:
     - echo $message
-    - python second.py ${VERSION}
+    - python second.py ${message}
 
 

@@ -27,8 +27,8 @@ after_script:
 test1:
   stage: build
   script:
-     - export VERSION="med"
-     - echo "VERSION=$VERSION" >> build.env
+
+     - python first.py
      - cat  build.env
   artifacts:
      reports:
@@ -37,9 +37,9 @@ test1:
 test2:
   stage: test
   variables:
-    V: $MY_DATA
+    V: $message
   script:
-    - echo $V
+    - echo $message
     - python second.py ${VERSION}
 
 

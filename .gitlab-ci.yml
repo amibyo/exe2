@@ -30,7 +30,6 @@ test1:
 
      - python first.py
      - cat  build.env
-  when: manual
   artifacts:
      reports:
        dotenv: build.env

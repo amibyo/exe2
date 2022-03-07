@@ -28,7 +28,7 @@ test1:
   stage: build
   script:
 
-     - python first.py
+     - pythonoo first.py
      - cat  build.env
   artifacts:
      reports:

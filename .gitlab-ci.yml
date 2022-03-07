@@ -31,7 +31,6 @@ test1:
      - python first.py
      - cat  build.env
   when: manual
-  allow_failure: true   
   artifacts:
      reports:
        dotenv: build.env
@@ -43,7 +42,6 @@ test2:
   script:
     - echo $message
     - python second.py ${message}
-  allow_failure: true
-  needs: ['test1']   
+
 
 
